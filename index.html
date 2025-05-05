@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Yigit Yektin</title>
+  <style>
+    body {
+      font-family: "Courier New", Courier, monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #0f2831;
+      font-size: 15px;
+      text-align: left;
+    }
+
+    .date {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 15px;
+      color: #cfcfcf;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+      padding-left: 10px;
+    }
+
+    .section h2 {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .info {
+      font-size: 15px;
+      line-height: 1.5;
+      margin-left: 10px;
+    }
+
+    .info a {
+      color: #0000ee;
+      text-decoration: none;
+    }
+
+    .info a:hover {
+      text-decoration: underline;
+    }
+
+    .contribution-container {
+      margin-top: 30px;
+      padding-top: 20px;
+      text-align: center;
+    }
+
+    .contribution-title {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+
+    .contribution-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 10px);
+      grid-template-rows: repeat(7, 10px);
+      gap: 4px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .square {
+      width: 10px;
+      height: 10px;
+      background-color: #2d2d2d;
+      border-radius: 2px;
+    }
+
+    .square[data-level="1"] {
+      background-color: #9be9a8;
+    }
+
+    .square[data-level="2"] {
+      background-color: #40c463;
+    }
+
+    .square[data-level="3"] {
+      background-color: #30a14e;
+    }
+
+    .square[data-level="4"] {
+      background-color: #216e39;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 15px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="date" id="current-date"></div>
+
+  <div class="container">
+    <div class="section" id="about">
+      <h2>Yigit Yektin / Researcher & Technical Writer</h2>
+      <div class="info"></div>
+    </div>
+
+    <div class="section" id="about-me">
+      <h2>About Me</h2>
+      <div class="info">
+        <p>Electric & Electronic Engineering student</p>
+      </div>
+    </div>
+
+    <div class="section" id="profile">
+      <h2>Profile</h2>
+      <div class="info">
+        <p><strong>[X]:</strong> <a href="https://x.com/yigityektin" target="_blank">https://x.com/yigityektin</a></p>
+        <p><strong>[Mail]:</strong> <a href="mailto:yigit.yektin@gmail.com" target="_blank">yigit.yektin@gmail.com</a></p>
+        <p><strong>[GitHub]:</strong> <a href="https://github.com/yigityektin" target="_blank">https://github.com/yigityektin</a></p>
+      </div>
+    </div>
+
+    <div class="section" id="writings">
+      <h2>Selected writings</h2>
+      <h3>[EN]</h3>
+      <div class="info">
+        <p><a href="https://research.2077.xyz/eip-2935-a-step-to-achieving-stateless-execution" target="_blank" style="font-style: italic">EIP-2935: A Step to Achieving Stateless Execution</a></p>
+        <p><a href="https://research.2077.xyz/erc-7699-erc-20-with-transfer-reference-extension" target="_blank" style="font-style: italic">ERC-7699: ERC-20 with Transfer Reference Extension</a></p>
+        <p><a href="https://medium.com/itu-blockchain/confused-sequencing-bab3876eae1b" target="_blank" style="font-style: italic">Confused Sequencing</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/ethereum-attestation-service-eas-3481d3c282c6" target="_blank" style="font-style: italic">Ethereum Attestation Service (EAS)</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/case-study-distributing-providing-security-through-cross-chain-standards-protocols-and-liquid-dd5da0dd56b3" target="_blank" style="font-style: italic">Case Study: Distributing/Providing Security through Cross-chain Standards, Protocols, and Liquid Staking Products and How EigenLayer Stands Along These?</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/how-to-do-a-console-backup-program-for-remote-desktops-with-c-sql-and-google-drive-apis-48ab1840800c" target="_blank" style="font-style: italic">How to do a Console Backup Program for Remote Desktops with C#, SQL, and Google Drive APIs</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/how-to-make-circuit-board-on-copper-block-with-using-acetone-351d16b68924" target="_blank" style="font-style: italic">How To Make Circuit Board On Copper Block With Using Acetone</a></p>
+      </div>
+
+      <h3>[TR]</h3>
+      <div class="info">
+        <p><a href="https://medium.com/pharus/goplus-ekosistem-raporu-ee78d679eda8" target="_blank" style="font-style: italic">GoPlus Ekosistem Raporu</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/movement-940fd2543b07" target="_blank" style="font-style: italic">Movement</a></p>
+        <p><a href="https://medium.com/pharus/scroll-ve-ekosistemi-b%C3%B6l%C3%BCm-1-pharus-1443988aa89c" target="_blank" style="font-style: italic">Scroll ve Ekosistemi</a></p>
+        <p><a href="https://blog.itublockchain.com/blok-%C3%BCretiminde-teklif%C3%A7i-ve-%C3%BCretici-ayr%C4%B1m%C4%B1-pbs-c4602fdc4527" target="_blank" style="font-style: italic">Blok Üretiminde Teklifçi ve Üretici Ayrımı (PBS)</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/tcp-ip-ve-tornado-cashe-dair-415107a7a953" target="_blank" style="font-style: italic">TCP/IP ve Tornado Cash’e Dair</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/aligned-layer-evrensel-do%C4%9Frulama-katman%C4%B1-13c3c7112031" target="_blank" style="font-style: italic">Aligned Layer: Evrensel Doğrulama Katmanı</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/g%C3%BCvenli%C4%9Fe-yeni-bir-perspektif-eigenlayer-ve-avs-3303a6691fe6" target="_blank" style="font-style: italic">Güvenliğe Yeni Bir Perspektif: EigenLayer ve AVS</a></p>
+        <p><a href="https://medium.com/@yigit.yektin/risc-zero-nedir-ne-de%C4%9Fildir-d8884e03b7b0" target="_blank" style="font-style: italic">RISC-Zero: Nedir, Ne değildir?</a></p>
+        <p><a href="https://blog.itublockchain.com/validium-f98f85115942" target="_blank" style="font-style: italic">Validium</a></p>
+        <p><a href="https://blog.itublockchain.com/oracle-problemi-60d82b9a18d0" target="_blank" style="font-style: italic">Oracle Problemi</a></p>
+      </div>
+
+      <h3>Translations</h3>
+      <div class="info">
+        <p><a href="https://blog.itublockchain.com/shor-algoritmas%C4%B1n%C4%B1-ke%C5%9Ffetmek-tamsay%C4%B1lar%C4%B1-%C3%A7arpanlar%C4%B1na-ay%C4%B1rma-i%CC%87%C5%9Flemlerine-kuantum-hesaplama-a7a3177cea5d" target="_blank" style="font-style: italic">Shor Algoritmasını Keşfetmek: Tamsayıları Çarpanlarına Ayırma İşlemlerine Kuantum Hesaplama Yaklaşımı</a></p>
+        <p><a href="https://blog.itublockchain.com/defi%C4%B1-yeniden-tan%C4%B1mlamak-zorluklar-ve-yol-haritas%C4%B1-%C3%A7eviri-22c6286cca88" target="_blank" style="font-style: italic">DeFi’ı Yeniden Tanımlamak: Zorluklar ve Yol Haritası</a></p>
+        <p><a href="https://blog.itublockchain.com/bitcoin-neden-%C3%B6nemlidir-%C3%A7eviri-4538f4ca3e64" target="_blank" style="font-style: italic">Bitcoin Neden Önemlidir?</a></p>
+        <p><a href="https://blog.itublockchain.com/binius-i%CC%87kili-sistem-alanlar%C4%B1-%C3%BCzerinde-y%C3%BCksek-efektiflikte-kan%C4%B1tlar-%C3%A7eviri-4356d5939000" target="_blank" style="font-style: italic">Binius: İkili Sistem Alanları Üzerinde Yüksek Efektiflikte Kanıtlar</a></p>
+      </div>
+    </div>
+
+    <div class="section" id="speech">
+      <h2>EthCC-7 Speech</h2>
+      <div class="info">
+        <p><a href="https://ethcc.io/archives/ways-of-scaling-ethereum-offchain-and-onchain" target="_blank" style="font-style: italic">Ways of Scaling Ethereum: Offchain and Onchain</a></p>
+      </div>
+    </div>
+
+    <div class="section" id="projects">
+      <h2>Hackathon Projects</h2>
+      <div class="info">
+        <p>
+          <a href="https://dorahacks.io/buidl/14124" target="_blank" style="font-style: italic">Tantalus - Lambda Hack Week 2</a> &&
+          <a href="https://hackmd.io/@bJhN-9oKQoWFvOFQhU8SyQ/rkWkVO5CA" target="_blank" style="font-style: italic">HackMD</a>
+        </p>
+        <p><a href="https://ethglobal.com/showcase/caramel-dofn3" target="_blank" style="font-style: italic">Caramel - Scaling Ethereum 2024</a></p>
+        <p><a href="https://ethglobal.com/showcase/l3s-zo5ct" target="_blank" style="font-style: italic">L3S - ETHGlobal Brussels 2024</a></p>
+        <p><a href="https://devpost.com/software/fusionlink" target="_blank" style="font-style: italic">FusionLink - Chainlink Block Magic Hackathon</a></p>
+      </div>
+    </div>
+
+    <div class="section" id="streams">
+      <h2>Live Streams & Videos</h2>
+      <div class="info">
+        <p><a href="https://www.youtube.com/live/ppq35e-NPWU?si=PZseISmQ5GtELcwy" target="_blank" style="font-style: italic">Ethereum 2024 Roadmap</a></p>
+        <p><a href="https://youtu.be/5jt40feF41I?si=gg3Xv1g1nQxWgxtn" target="_blank" style="font-style: italic">Otopsi #8 - Bybit ve Safe{Wallet} Saldırısı</a></p>
+        <p><a href="https://youtu.be/ljUjexqLssI?si=i2-UtvbcKe-72kyb" target="_blank" style="font-style: italic">Scroll Ekosistemi Derinlemesine Bakış</a></p>
+      </div>
+    </div>
+
+  <script>
+    const currentDateElement = document.getElementById("current-date");
+    const now = new Date();
+    currentDateElement.innerText = now.toLocaleDateString("en-US", {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    });
+
+  </script>
+</body>
+
+</html>
